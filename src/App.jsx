@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
-import LayoutMain from './pages/LayoutMain'
+import { routes } from './routes'
+import { useRoutes } from 'react-router-dom'
 
 export const App = () => {
-
+  const elements = useRoutes(routes)
   return (
     <>
-      <LayoutMain />
+      {elements}
     </>
   )
 }
