@@ -1,0 +1,119 @@
+/* Reset y estilos base */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .home-container {
+    min-height: 100vh;
+    background-color: #f5f7fa;
+  }
+  
+  /* Hero Banner */
+  .hero-banner {
+    background: linear-gradient(135deg, blue, #19191a);
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sección de características */
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+/* Contenedor principal */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    text-align: center; /* Centra el título y el contenido */
+  }
+  
+  /* Título "About Us" */
+  .about-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem; /* Espacio debajo del título */
+  }
+  
+  /* Cuadro de texto (feature-card modificado) */
+  .about-content {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 auto; /* Centra horizontalmente */
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Ajustes para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .about-content {
+      width: 95%;
+      padding: 1.5rem;
+    }
+  }

@@ -7,11 +7,12 @@ import Footer from '../features/layout/footer/footer.jsx'
 
 export const LayoutMain = () => {
   return (
-    <div >
+    <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
       <Navbar />
+      <div className="d-flex" style={{ marginTop: '10px' }}></div>
       <div >
         <Sidebar />
-        <main >
+        <main className="flex-grow-1 p-4" style={{ marginLeft: '220px' }}>
           <Outlet/>
         </main>
       </div>
