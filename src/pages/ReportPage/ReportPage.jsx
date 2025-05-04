@@ -1,7 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ReportPage.css'
+import { Chart as ChartJS } from 'chart.js/auto'
+import { Bar, Doughnut, Line } from 'react-chartjs-2'
+import { getBestSellingProducts } from '../../services/api'
+import { data } from 'react-router-dom'
 
 export const ReportPage = () => {
+  const [productData, setProductData] = useState({
+    labels: [],
+    datasets: []
+  })
+
+  useEffect(()=>{
+    const fetchData = async()=>{
+      const products = await getBestSellingProducts()
+      const labels = products.map(p = p.name)
+      const sales = products.map(p = p.soldCount)
+
+      setProductData({
+        labels,
+        datasets:[
+          {
+            label: "Productos más vendidios",
+            data : sales,
+          }
+        ]
+      })
+    }
+    fetchData()
+  }, [])
+
+
   return (
     <>
       <div className='report-containter'>
@@ -18,14 +47,9 @@ export const ReportPage = () => {
 
         <section className='information-foot'>
           <div className='foot-content information-content'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Sed scelerisque ex ac maximus venenatis. 
-              Sed euismod efficitur ipsum ac sodales. Donec vel leo consequat, iaculis urna non, pellentesque ex. 
-              Suspendisse elit nibh, cursus sit amet pretium et, aliquet et nulla. Proin semper aliquam eros sed interdum. 
-              Donec tellus felis, placerat et leo ac, sodales venenatis odio. Nunc pulvinar lacinia tristique. 
-              Aenean ac sapien in neque viverra vulputate. Donec at purus quis neque dapibus rutrum ac quis ante. 
-              Aenean vel dolor non arcu rhoncus mollis. Duis auctor ipsum sapien. Nulla et ante pharetra, iaculis leo at, lacinia sem. 
-              Nulla quis pulvinar ipsum. Mauris ac laoreet risus. Nunc tortor est, condimentum eu odio at, varius lacinia lorem.</p>
+            <Bar
+              data={productData}
+            />
           </div>
         </section>
 

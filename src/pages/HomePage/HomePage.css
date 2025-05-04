@@ -7,12 +7,14 @@ body, html {
   
   .home-container {
     min-height: 100vh;
-    background-color: #f5f7fa;
+    background: linear-gradient(135deg, #2C3E50, gray);
+    border-radius: 2%;
   }
   
   /* Hero Banner */
   .hero-banner {
-    background: linear-gradient(135deg, blue, #19191a);
+    background: linear-gradient(135deg, black, rgb(27, 27, 27));
+    border-radius: 20px 20px 0 0;
     color: white;
     padding: 5rem 1rem;
     text-align: center;
@@ -57,7 +59,7 @@ body, html {
   }
   
   .feature-card {
-    background: white;
+    background: black;
     border-radius: 10px;
     padding: 2rem;
     width: 280px;
@@ -76,12 +78,12 @@ body, html {
   }
   
   .feature-card h3 {
-    color: #333;
+    color: white;
     margin-bottom: 1rem;
   }
   
   .feature-card p {
-    color: #666;
+    color: white;
     line-height: 1.6;
   }
 
@@ -96,13 +98,13 @@ body, html {
   /* Título "About Us" */
   .about-title {
     font-size: 2rem;
-    color: #333;
+    color: white;
     margin-bottom: 2rem; /* Espacio debajo del título */
   }
   
   /* Cuadro de texto (feature-card modificado) */
   .about-content {
-    background: white;
+    background: black;
     border-radius: 10px;
     padding: 2rem;
     margin: 0 auto; /* Centra horizontalmente */
