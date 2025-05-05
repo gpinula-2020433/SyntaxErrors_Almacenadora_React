@@ -197,7 +197,7 @@ const [formData, setFormData] = useState(form)
             </button>
         </form>
         <div className='redirect-to-login'>
-            <p>Ya tienes cuenta? <Link to="/auth/login">Inicia seción aquí</Link></p>
+            <p>Ya tienes cuenta? <Link to="/auth/login">Inicia sesión aquí</Link></p>
         </div>
     </div>
   )

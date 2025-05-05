@@ -1,4 +1,3 @@
-import { element } from "prop-types";
 import { LayoutMain } from "./pages/LayoutMain";
 import { DashboardPage } from "./pages/Dashboard/DashboardPage";
 import { NotFoundPage } from "./pages/NotFound/NotFoundPage";
@@ -10,10 +9,10 @@ import { ClientPage } from "./pages/ClientPage/ClientPage";
 import { MovementPage } from "./pages/MovementPage/MovementPage";
 import { ReportPage } from "./pages/ReportPage/ReportPage";
 import { HomePage } from "./pages/HomePage/HomePage";
-import { Login } from "./components/Login/Login";
-import {Register} from "./components/Register/Register"
-import {AuthPage} from "./pages/Auth/AuthPage"
+import { AuthPage} from "./pages/Auth/AuthPage"
 import { Navigate } from "react-router-dom";
+import { Login } from "./components/Login/Login";
+import { Register} from "./components/Register/Register"
 
 export const routes = [
     {
@@ -42,8 +41,7 @@ export const routes = [
         path:'/main',
         element: <LayoutMain />,
         children:[
-            {path: '', element: <Navigate to="home"/>},
-            {path: 'home',element: <HomePage/>},
+            {path: '', element:<HomePage/>},
             {path: 'contact',element:<ContactPage/>},
             {path: 'login',element:<Login/>},
             {path: 'products',element:<ProductPage/>},
@@ -61,5 +59,4 @@ export const routes = [
         path:'*',
         element: <NotFoundPage/>
     }
-
 ]

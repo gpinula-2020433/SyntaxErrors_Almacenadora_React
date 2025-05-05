@@ -2,6 +2,6 @@ import React from 'react'
 
 export const SuppliersPage = () => {
   return (
-    <div>SuppliersPage</div>
+    <h1>SuppliersPage</h1>
   )
 }

@@ -1,15 +1,13 @@
-import { useRoutes } from "react-router-dom"
-import { routes } from "./routes"
-import { Toaster } from "react-hot-toast"
+import React from 'react'
+import './App.css'
+import { routes } from './routes'
+import { useRoutes } from 'react-router-dom'
 
-//Exportación por default
-function App() {
-    const elements = useRoutes(routes)
-
+export const App = () => {
+  const elements = useRoutes(routes)
   return (
     <>
       {elements}
-      <Toaster position="bottom-right" reverseOrder={false}/>
     </>
   )
 }

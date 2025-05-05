@@ -9,9 +9,9 @@ export function Navbar() {
           INVENTORY MANAGEMENT SYSTEM
         </div>
         <div className="d-flex gap-4">
-          <Link to="/" className="text-light text-decoration-none">Home</Link>
+          <Link to="/main" className="text-light text-decoration-none">Home</Link>
           <Link to="/contact" className="text-light text-decoration-none">Contacts</Link>
-          <Link to="/login" className="text-light text-decoration-none">Log in</Link>
+          <Link to="/auth/login" className="text-light text-decoration-none">Log in</Link>
         </div>
       </div>
     </nav>

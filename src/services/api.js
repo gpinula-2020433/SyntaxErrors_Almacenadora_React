@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from "axios";
 
 //Configuración básica (General o genérica)
 const apiClient = axios.create(
@@ -32,8 +32,6 @@ export const registerRequest = async(user)=> {
         }
     }
 }
-
-
 
 export const getBestSellingProducts = async ()=>{
     try {

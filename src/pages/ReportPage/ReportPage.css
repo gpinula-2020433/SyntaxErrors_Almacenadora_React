@@ -10,7 +10,7 @@ body, html {
 }
 
 .report-banner{
-    background: linear-gradient(119deg, orange, #ffae6a);
+    background: linear-gradient(119deg, #2C3E50, #2C3E50);
     color: white;
     padding: 5rem 1rem;
     text-align: center;
@@ -77,7 +77,7 @@ body, html {
 }
 
 .information-content{
-    background: orange;
+    background: #2C3E50;
     border-radius: 10px;
     padding: 2rem;
     margin: 0 auto; /* Centra horizontalmente */

@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(5px);
-    background-image: url("../../assets/hoteles.jpg");  /* Asegúrate de que esta ruta sea correcta */
+    background-image: url("../../assets/almacenes.webp");  /* Asegúrate de que esta ruta sea correcta */
 }
 
 /* Estilos comunes para los formularios de Login y Register */
