@@ -42,7 +42,8 @@ export const routes = [
         path:'/main',
         element: <LayoutMain />,
         children:[
-            {path: '',element:<HomePage/>},
+            {path: '', element: <Navigate to="home"/>},
+            {path: 'home',element: <HomePage/>},
             {path: 'contact',element:<ContactPage/>},
             {path: 'login',element:<Login/>},
             {path: 'products',element:<ProductPage/>},
